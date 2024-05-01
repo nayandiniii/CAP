@@ -4,9 +4,10 @@ import React from "react";
 import { Card, CardContent, Typography, Button } from "@material-ui/core";
 
 const JobCard = ({ job }) => {
-  // eslint-disable-next-line
-  const { id, title, company, location, description, experience, applied } = job;
+  // Destructuring only the necessary properties from the 'job' object
+  const { title, company, location, description, experience, applied } = job;
 
+  // Define a function to handle the apply button click
   const handleApply = () => {
     // Logic to handle applying for the job (e.g., dispatch an action to update state)
     console.log("Applying for job:", title);
