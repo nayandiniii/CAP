@@ -1,0 +1,66 @@
+/* App.css */
+.app {
+    text-align: center;
+  }
+  
+  .app-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .load-more {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  /* JobCard.css */
+  .job-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+  }
+  
+  /* Filters.css */
+  .filters {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 20px;
+    width: 250px;
+  }
+  
+  .filters input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .filters button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filters button:hover {
+    background-color: #0056b3;
+  }
+  
