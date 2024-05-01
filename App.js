@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Container, Grid } from "@material-ui/core";
 import JobCard from "./Card";
+import "./App.css"; // Import the CSS file
 
 const App = () => {
   const dispatch = useDispatch();
@@ -26,7 +27,9 @@ const App = () => {
           }
         );
         const data = await response.json();
-        dispatch({ type: "FETCH_JOBS_SUCCESS", payload: data });
+        // Add unique 'id' to each job object
+        const jobsWithIds = data.jobs.map((job, index) => ({ ...job, id: index + 1 }));
+        dispatch({ type: "FETCH_JOBS_SUCCESS", payload: jobsWithIds });
       } catch (error) {
         dispatch({ type: "FETCH_JOBS_FAILURE", payload: error.message });
       }
