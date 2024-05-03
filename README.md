@@ -19,15 +19,18 @@ Follow these instructions to get a copy of the project running on your local mac
 
 2. Navigate to project directory:
 
-  cd sample-node-project/src
+   ```bash
+   cd sample-node-project/src
 
 3. Install Dependencies:
   
-  npm install
+   ```bash
+   npm install
 
 Running the Application
 1. Once all dependencies are installed and you are in the 'src' directoy, start the application by running:
   
-  npm start
+   ```bash
+   npm start
 
 This will start the application, and you should see the output in your terminal.
