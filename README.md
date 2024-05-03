@@ -20,7 +20,7 @@ Follow these instructions to get a copy of the project running on your local mac
 2. Navigate to project directory:
 
    ```bash
-   cd sample-node-project/src
+   cd CAP/src
 
 3. Install Dependencies:
   
